@@ -4,6 +4,7 @@
 <title>ASC Academy | Contact us</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="layout.css" type="text/css" media="all">
+<script src="script.js"></script>
 </head>
 <body id="page5">
 <!-- START PAGE SOURCE -->
@@ -67,9 +68,10 @@
           </div>
           <div class="wrapper">
             <p>Your Message:</p>
-            <textarea cols="1" rows="1"></textarea>
+            <textarea cols="1" rows="1" id="yourMessage"></textarea>
           </div>
-          <div class="wrapper"> <a href="#" class="link1 right">Send</a> <a href="#" class="link1 right">Clear</a> </div>
+          <div class="wrapper"> <a href="#" class="link1 right">Send</a></div>
+          <div class="wrapper"> <button onclick="clearTextBox()" class="clearTextMessage right">Clear Message Box</button></div>
         </div>
       </form>
     </article>
