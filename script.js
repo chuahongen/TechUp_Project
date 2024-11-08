@@ -5,9 +5,9 @@ function clearTextBox() {
 
 function testPhoneNum() {
    var validPhoneNum = /^\(6|8|9)\d{7}$/;
-   var phoneNum = document.getElementById("yourPhoneNum").value
+   var phoneNum = document.getElementById("yourPhoneNum").value;
    if (validPhoneNum.test(phoneNum)=false) {
-    window.alert(Please enter a valid Singapore phone number)
+    window.alert("Please enter a valid Singapore phone number");
    }
     /* var trueNum = "+6592397028";
     var falsNum = "+6692397028";
