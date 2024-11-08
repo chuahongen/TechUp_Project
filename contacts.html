@@ -60,7 +60,7 @@
           </div>
           <div class="wrapper">
             <p>E-mail:</p>
-            <input type="text" class="input">
+            <input type="text" class="input" id="yourEmailAdd">
           </div>
           <div class="wrapper">
             <p>Singapore contact number:</p>
@@ -70,7 +70,7 @@
             <p>Message:</p>
             <textarea cols="1" rows="1" id="yourMessage"></textarea>
           </div>
-          <div class="wrapper"> <button onclick="testPhoneNum()" class="sendTextMessage right">Send</button></div>
+          <div class="wrapper"> <button onclick="testPhoneNum(); validateEmail()" class="sendTextMessage right">Send</button></div>
           <div class="wrapper"> <button onclick="clearTextBox()" class="clearTextMessage right">Clear Message Box</button></div>
         </div>
       </form>
