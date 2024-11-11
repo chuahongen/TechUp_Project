@@ -19,3 +19,16 @@ function validateEmail() {
         alert("Please enter a valid email address");
     }
 }
+
+function loadTechCourse() {
+    var list1 = document.getElementById("tech_Courses_Name_Registration");
+    var list2 = document.getElementById("tech_Courses_Date_Registration");
+    var list1SelectedValue = list1.options[list1.selectedIndex].value;
+    if (list1SelectedValue == "Incident_Response_and_Hacking_Tools") {
+        list2.options.length = 0;
+        list2.options[0] = new Option("--Select--", "Select");
+        list2.options[1] = new Option("6 - 11 January 2025", "6_11 January 2025");
+        list2.options[2] = new Option("3 - 8 February 2025", "3_8 February 2025");
+    }
+
+}
