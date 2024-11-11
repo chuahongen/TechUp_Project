@@ -51,7 +51,7 @@
 <div class="main">
   <section id="content">
     <article class="pad_left2">
-      <h2>Registration Form</h2>
+      <h2>Leadership Courses Registration Form</h2>
       <form id="RegistrationForm" action="#">
         <div class="wrapper">
           <div class="wrapper">
@@ -68,11 +68,17 @@
           </div>
           <div class="wrapper">
             <p>Course name:</p>
-            <select name="courses" class="dropdown" id="ldrShip_Courses">
+            <select name="courses" class="dropdown" id="ldr_Ship_Courses_Name_Registration">
+              <option value="Select">--Select--</option>
               <option value="Foundations_in_Cybersecurity_Leadership">Foundations in Cybersecurity Leadership</option>
               <option value="Intermediate_Cybersecurity_Management">Intermediate Cybersecurity Management</option>
               <option value="Advanced_Cybersecurity_Strategy">Advanced Cybersecurity Strategy</option>
               <option value="Executive_Cybersecurity_Leadership">Executive Cybersecurity Leadership</option>
+            </select>
+          </div>
+          <div class="wrapper">
+            <p>Course date:</p>
+            <select name="ldr_Ship_Courses_Date" class="dropdown" id="ldr_Ship_Courses_Date_Registration" onclick="loadLdrShipCourseDates()">
             </select>
           </div>
           <div class="wrapper"> <button onclick="testPhoneNum(); validateEmail()" class="sendTextMessage right">Register</button></div>
