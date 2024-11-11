@@ -29,6 +29,9 @@ function loadTechCourse() {
         list2.options[0] = new Option("--Select--", "Select");
         list2.options[1] = new Option("6 - 11 January 2025", "6_11 January 2025");
         list2.options[2] = new Option("3 - 8 February 2025", "3_8 February 2025");
+    } else if (list1SelectedValue == "Cyber_Threat_Intelligence") {
+        list2.options.length = 0;
+        list2.options[0] = new Option("--Select--", "Select");
+        list2.options[1] = new Option("13 - 18 January 2025", "13_18 January 2025");
+        list2.options[2] = new Option("10 - 15 February 2025", "10_15 February 2025")
     }
-
-}
