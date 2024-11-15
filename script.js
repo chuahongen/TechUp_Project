@@ -35,7 +35,7 @@ function validateEmail_PhoneNum() {
         alert("Please enter a valid email address");
     } 
     else {
-        alert("Thank you. We will get back to you ASAP");
+        alert("Thank you for your interest. We will get back to you ASAP");
     }
 }
 
