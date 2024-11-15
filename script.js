@@ -1,22 +1,41 @@
-function testPhoneNum() {
+/*function testPhoneNum() {
    var validPhoneNum = /^(6|8|9)\d{7}$/;
    var phoneNum = document.getElementById("yourPhoneNum").value;
-   /*alert(validPhoneNum.test(phoneNum));*/
+   
    if(validPhoneNum.test(phoneNum)==false){
     alert("Please enter a valid Singapore phone number");
    }
-}
+}*/
 
 function clearTextBox() {
     document.getElementById("yourMessage").value="";
     /*event.preventDefault();*/
 }
 
-function validateEmail() {
+/*function validateEmail() {
     var validEmailAdd = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     var emailAdd = document.getElementById("yourEmailAdd").value;
     if(validEmailAdd.test(emailAdd)==false){
         alert("Please enter a valid email address");
+    }
+}*/
+
+function validateEmail_PhoneNum() {
+    var validEmailAdd = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    var emailAdd = document.getElementById("yourEmailAdd").value;
+    var validPhoneNum = /^(6|8|9)\d{7}$/;
+    var phoneNum = document.getElementById("yourPhoneNum").value;
+    if (validEmailAdd.test(emailAdd)==false && validPhoneNum.test(phoneNum)==false) {
+        alert("Please enter a valid email address and Singapore phone number");
+    }
+    else if (validEmailAdd.test(emailAdd)==true && validPhoneNum.test(phoneNum)==false) {
+        alert("Please enter a valid Singapore phone number");
+    }
+    else if (validEmailAdd.test(emailAdd)==false && validPhoneNum.test(phoneNum)==true) {
+        alert("Please enter a valid email address");
+    } 
+    else {
+        alert("Thank you. We will get back to you ASAP");
     }
 }
 
