@@ -76,7 +76,7 @@
           </div>
           <div class="wrapper">
             <p>Course name:</p>
-            <select name="tech_Courses_Name" class="dropdown" id="tech_Courses_Name_Registration">
+            <select name="tech_Courses_Name" class="dropdown" id="tech_Courses_Name_Registration"  onclick="loadTechCourseDates()">
               <option value="Select">--Select--</option>
               <option value="Incident_Response_and_Hacking_Tools">Incident Response and Hacking Tools</option>
               <option value="Cyber_Threat_Intelligence">Cyber Threat Intelligence</option>
@@ -86,10 +86,10 @@
           </div>
           <div class="wrapper">
             <p>Course date:</p>
-            <select name="tech_Courses_Date" class="dropdown" id="tech_Courses_Date_Registration" onclick="loadTechCourseDates()">
+            <select name="tech_Courses_Date" class="dropdown" id="tech_Courses_Date_Registration">
             </select>
           </div>
-          <div class="wrapper"> <button onclick="validateEmail_PhoneNum()" class="sendTextMessage right">Register</button></div>
+          <div class="wrapper"> <button onclick="validateEmail_PhoneNum_Reg()" class="sendTextMessage right">Register</button></div>
         </div>
       </form>
     </article>
